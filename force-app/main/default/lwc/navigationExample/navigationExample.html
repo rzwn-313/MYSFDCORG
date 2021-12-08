@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Navigation Services">
+        <div class="slds-p-left_medium">
+            <br/>
+            <lightning-button-group>
+                <lightning-button label="Contact Home" onclick={openAccountHome}></lightning-button>
+                <lightning-button label="Account List" onclick={openAccountList}></lightning-button>
+                <lightning-button label="Create New Account" onclick={createNewAccount}></lightning-button>
+                <lightning-button label="Account Record" onclick={openAccountRecord}></lightning-button>
+                <lightning-button label="Account All ListView" onclick={navigateToAccountRecentListView}></lightning-button>
+                <lightning-button label="Open Salesforce Blog" onclick={openSalesforceBlog}></lightning-button>
+                <lightning-button label="Project My CustomApp" onclick={navigateToMyCustomApp}></lightning-button>
+            </lightning-button-group>
+        </div>
+        <br/>
+    </lightning-card>
+</template>

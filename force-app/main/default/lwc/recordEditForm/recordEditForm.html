@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Account Details Record Edit Form ..">
+        <lightning-layout>
+            <lightning-layout-item>
+                <lightning-record-edit-form 
+                record-id="0015j00000AyJYkAAN"
+                object-api-name="Account"
+                mode="edit"
+                onsuccess={handleSuccess}>
+                    <lightning-input-field field-name={accountName}></lightning-input-field> 
+                    <lightning-input-field field-name={accountSite}></lightning-input-field>
+                    <lightning-input-field field-name={accountPhone}></lightning-input-field>
+
+                    <lightning-button variant="brand" type="submit" name="save" label="Save"></lightning-button>
+                </lightning-record-edit-form>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
