@@ -1,0 +1,8 @@
+.titlestyle {
+    font-size: 15px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  .textAreaBody {
+    --sds-c-textarea-sizing-min-height:250px;
+}

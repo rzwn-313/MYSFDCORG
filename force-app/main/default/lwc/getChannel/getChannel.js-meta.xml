@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__Tab</target>
+      </targets>
+      <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property label="Enter Title" name="titlename" type="String"/>
+            <property label="Channel Name" name="channelname" type="String"/>
+            <property label="UI Type" name="uitype" type="String" datasource="DataTable,Json,Form" default="DataTable"/>
+            <property label="recordid" name="recordid" type="String"/>
+            <property label="Pass record ID" name="passrecordid" type="Boolean" default="true"/>
+            
+            
+            <property label="Auto Load" name="autoload" type="Boolean"/>
+            <property label="Show Submit" name="submitload" type="Boolean" default="true"/>
+            <property label="Refresh Button" name="refresh" type="Boolean"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

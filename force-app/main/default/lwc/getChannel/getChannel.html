@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="GetJson" icon-name="utility:insert_tag_field">   
+        
+        <div class="c-container" style="padding: 10px;">     
+                    <lightning-icon icon-name="standard:account" title="Final Report"></lightning-icon>
+                    <span class="slds-text-title titlestyle"><b>{titlename}</b></span>
+                    <lightning-button-icon icon-name="utility:adduser"   variant="border-filled" alternative-text="Add user" class="slds-m-left_xx-small" title="Add user"></lightning-button-icon>
+                    <template if:false={autoload}>
+                        <template if:false={channelname}>
+                            <lightning-input type="text" label="Channel Name" class="slds-box" required="true" value={channelname} onchange={handleChangeChannel}></lightning-input>
+                        </template>
+                        <template if:true={submitload}>
+                            <lightning-button variant="brand" label="Submit" title="Primary action" onclick={handleSubmit} class="slds-m-left_x-small slds-align_absolute-center"></lightning-button>  
+                        </template>       
+                    </template>
+
+                    <template if:true={showdiv}>
+                        <c-any-json2-html title="JSON To HTML" get-value-from-parent={jsondata} json={json} theme="slds">                         
+                        </c-any-json2-html>
+                    </template>
+        </div>
+
+    
+        
+    </lightning-card>
+ </template>
+ 
